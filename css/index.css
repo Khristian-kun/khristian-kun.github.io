@@ -1,0 +1,103 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+@font-face {
+  font-family: 'SAO';
+  src: url(/font/SAOUI-Regular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SAO';
+  src: url(/font/SAOUI-Bold.otf) format("truetype");
+  font-weight: bold;
+  font-style: bold; }
+body {
+  font-family: SAO; }
+
+#menu {
+  bottom: 20px;
+  right: 20px; }
+  #menu:hover #main {
+    background-image: url(/images/Man_on.png); }
+
+#main {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/Man.png);
+  background-size: 100%; }
+
+.yes-btn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url(/images/Yes.png);
+  background-size: 100%; }
+  .yes-btn:active {
+    background-image: url(/images/Yes_on.png); }
+
+.no-btn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url(/images/No.png);
+  background-size: 100%; }
+  .no-btn:active {
+    background-image: url(/images/No_on.png); }
+
+#top {
+  background-image: url(/images/elucidator.png);
+  background-size: 80%;
+  background-position: 50% 40%;
+  background-repeat: no-repeat; }
+
+.hex-btn {
+  position: relative;
+  display: block;
+  background: transparent;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 40px auto;
+  color: blue;
+  border: 3px solid blue;
+  border-left: none;
+  border-right: none; }
+  .hex-btn:before, .hex-btn:after {
+    position: absolute;
+    content: '';
+    width: 21.21px;
+    height: 21.21px;
+    top: 2px;
+    z-index: -1;
+    border: 3px solid blue;
+    border-top: none;
+    border-left: none; }
+  .hex-btn:before {
+    left: -11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  .hex-btn:after {
+    left: 90px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .hex-btn:hover, .hex-btn:hover:before, .hex-btn:hover:after {
+    color: white;
+    background: blue; }
+
+/*# sourceMappingURL=index.css.map */

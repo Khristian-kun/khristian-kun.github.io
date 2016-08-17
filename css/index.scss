@@ -1,0 +1,114 @@
+
+@import "css3-mixins.scss";
+
+@mixin sao-btn($img, $imgon, $size: 48px) {
+  display: block;
+  width: $size;
+  height: $size;
+  background-image: $img;
+  background-size: 100%;
+  
+  &:active {
+    background-image: $imgon;
+  }
+}
+
+@font-face {
+  font-family: 'SAO';
+  src: url(/font/SAOUI-Regular.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SAO';
+  src: url(/font/SAOUI-Bold.otf) format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+body {
+  font-family: SAO;
+}
+
+#menu {
+  bottom: 20px;
+  right: 20px;
+
+  &:hover #main {
+    background-image: url(/images/Man_on.png);
+  }
+  
+}
+
+#main {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/Man.png);
+  background-size: 100%;
+}
+
+.yes-btn {
+  @include sao-btn(url(/images/Yes.png), url(/images/Yes_on.png));
+}
+
+.no-btn {
+  @include sao-btn(url(/images/No.png), url(/images/No_on.png));
+}
+
+#top {
+  background-image: url(/images/elucidator.png);
+  background-size: 80%;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+}
+
+.hex-btn {
+  position: relative;
+  display: block;
+  background: transparent;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 40px auto;
+  color: blue;
+  border: 3px solid blue;
+  border-left: none;
+  border-right: none;
+  
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    width: 21.21px;
+    height: 21.21px;
+    top: 2px;
+    z-index: -1;
+    border: 3px solid blue;
+    border-top: none;
+    border-left: none;
+  }
+  
+  &:before {
+    left: -11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  &:after {
+    left: 90px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  &:hover, &:hover:before, &:hover:after {
+    color: white;
+    background: blue;
+  }
+  
+}

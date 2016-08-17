@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0"/>
+    <title>Khristian Kun</title>
+    <!-- Google Material Icons -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>
+    <!-- Custom Stylesheet, built with Sass -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  </head>
+  <body class="grey darken-3">
+
+    <header>
+      <nav id="top" class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo center red-text">
+            Khristian Kun
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <br/>
+
+    <!-- Where your content goes -->
+    <main class="container-fluid grey darken-3">
+      <div class="row">
+        <div class="col hide-on-med-and-down l2">
+          <div class="card white">
+            <div class="card-content center">
+              <div class="collection">
+                <a href="index.html" class="collection-item sao-color grey-text">Home</a>
+                <a href="aboutme.html" class="collection-item active orange">About Me</a>
+                <a href="projects.html" class="collection-item sao-color grey-text">Projects</a>
+                <a href="teams.html" class="collection-item sao-color grey-text">Teams</a>
+                <a href="contact.html" class="collection-item sao-color grey-text">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m6 l6">
+          <div class="card white">
+            <div class="card-content black-text">
+              <span class="card-title">Card Title</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis in nisl ac eros euismod pulvinar. 
+                Integer consequat molestie fringilla. 
+                Proin dignissim, mi feugiat laoreet mattis, mauris risus dignissim velit, quis aliquam mi leo et lorem. 
+                In fermentum diam turpis, vitae maximus ipsum suscipit eget. 
+                Duis ullamcorper sed justo a tincidunt. 
+                Praesent efficitur dolor sed scelerisque sodales. 
+                Nunc ultricies, neque quis iaculis finibus, dui sem bibendum nisl, sit amet elementum dolor mi eget erat. 
+                Pellentesque eget suscipit purus.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card white">
+            <div class="card-content black-text">
+              <span class="card-title">Card Title</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis in nisl ac eros euismod pulvinar. 
+                Integer consequat molestie fringilla. 
+                Proin dignissim, mi feugiat laoreet mattis, mauris risus dignissim velit, quis aliquam mi leo et lorem. 
+                In fermentum diam turpis, vitae maximus ipsum suscipit eget. 
+                Duis ullamcorper sed justo a tincidunt. 
+                Praesent efficitur dolor sed scelerisque sodales. 
+                Nunc ultricies, neque quis iaculis finibus, dui sem bibendum nisl, sit amet elementum dolor mi eget erat. 
+                Pellentesque eget suscipit purus.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <div id="menu" class="fixed-action-btn horizontal hide-on-large-only">
+      <a id="main"></a>
+      <ul>
+        <li><a href="index.html" class="sao-color btn-floating tooltipped white" data-position="left" data-delay="50" data-tooltip="Home"><i class="material-icons grey-text">home</i></a></li>
+        <!--<li><a href="aboutme.html" class="sao-color btn-floating tooltipped white" data-position="top" data-delay="50" data-tooltip="About Me"><i class="material-icons grey-text">person</i></a></li>
+        --><li><a href="projects.html" class="sao-color btn-floating tooltipped white" data-position="top" data-delay="50" data-tooltip="Projects"><i class="material-icons grey-text">folder</i></a></li>
+        <li><a href="teams.html" class="sao-color btn-floating tooltipped white" data-position="top" data-delay="50" data-tooltip="Group"><i class="material-icons grey-text">group</i></a></li>
+        <li><a href="contact.html" class="sao-color btn-floating tooltipped white" data-position="top" data-delay="50" data-tooltip="Contact"><i class="material-icons grey-text">email</i></a></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+      // this allows the buttons to change colors when you hover them
+      $('.sao-color').hover(function() {
+        $(this).children('.material-icons').toggleClass('grey-text', 'white-text');
+        if($(this).is('a')) $(this).toggleClass('grey-text', 'white-text');
+        $(this).removeClass('white').addClass('orange');
+      }, function() {
+        $(this).children('.material-icons').toggleClass('grey-text', 'white-text');
+        if($(this).is('a')) $(this).toggleClass('grey-text', 'white-text');
+        $(this).removeClass('orange').addClass('white');
+      });
+    });
+</script>
+  </body>
+</html>
